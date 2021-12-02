@@ -1,0 +1,20 @@
+
+model {
+	for (i in 1:Q)
+	{
+		Y[i]~dnorm(mu[i], tau_y[i])
+		mu[i]=MU+B[REF[i]]
+		tau_y[i]=1/(sigma_y[REF[i]]^2)
+				}
+	
+	for (j in 1:K)
+	{	B[j]~dnorm(0,tau_b) 
+		sigma_y[j]~dunif(0,100)
+				}
+			
+			MU~dnorm(0,0.001)
+			sigma_b~dunif(0,100)
+			tau_b =1/(sigma_b^2)	
+						
+			}
+
