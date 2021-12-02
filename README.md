@@ -1,5 +1,5 @@
 # Simple-Bayesian-MetaAnalysis
-After a brief introduction to meta-analysis, four different simple Bayesian hierarchical models are fitted to assess the impact of climate change on wheat yields.
+After a brief introduction to meta-analysis, four different simple Bayesian hierarchical models are implemented to quantify the impact of climate change on wheat yields and analyze the uncertainty.
 The models are compared using standard statistical criteria. The robustness of the conclusion to the model assumptions is assessed.  
 
 The dataset used here is from:
